@@ -24,7 +24,7 @@ jobs:
           run: docker info
 
         - name: run images
-          run: docker run hello-world
+          run: docker run ${{ matrix.images }}
         
 
 
